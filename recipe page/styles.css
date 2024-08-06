@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --bg-card: rgb(255, 220, 155);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.accent-color{color: var(--Brown-800);
+font-weight: 800;}
+ul li,
+ol li {
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.young-serif {
+  font-family: "Young Serif", serif;
+}
+strong {
+  font-weight: 700;
+  color: var(--Stone-900);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--Stone-900);
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+}
+
+.card {
+  width:clamp(33rem,100%,40vw);
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.prep {
+  background-color: rgb(255, 239, 239);
+  padding: 10px;
+}
+
+.prep .heading {
+  color: var(--Rose-800);
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+ul {
+  margin: 20px 0;
+}
+.prep ul li {
+  padding-left: 10px;
+}
+
+.p-10 {
+  padding: 20px 0;
+}
+.mb {
+  border-bottom: 1px solid rgb(173, 173, 173);
+}
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--Brown-800);
+}
+
+.nut table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+table tr td {
+  padding: 8px 40px;
+}
+
+table tr:not(:last-child) {
+  border-bottom: 1px solid rgb(173, 173, 173); /* Customize the border color and style */
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Desserts</h1>
+<div class="cards-cont">
+  <div class="card">
+    <div class="top">
+      <div class="img">
+        <img src="./assets/images/image-waffle-desktop.jpg" alt="">
+      </div>
+      <div class="cart-btn btn" onclick=addItem()><i class="fa-solid   fa-cart-shopping"></i> Add to cart</div>
+      <div class="amount-btn btn">
+        <button class="add">-</button>
+        <p>1</p>
+        <button class="remove">+</button>
+      </div>
+    </div>
+    <div class="bottom">
+     
+     
+      <div class="category">Waffle</div>
+      <div class="name"> Waffle with Berries</div>
+      <div class="price">$6.50</div>
+    </div>
+    
+   
+  </div>
+
+</div>
+</main>
+<aside>
+  <div class="cart-box">
+    <h2>Your cart(7)</h2>
+  </div>
+</aside>
+  <!-- Desserts
+
+ 
+  
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart -->
+<!-- 
+  Your Cart (Quantity )
+  Your added items will appear here -->
+<script type="module" src="./main.js"></script>
+</body>
+</html>
