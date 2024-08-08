@@ -110,6 +110,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
+  background-color: var(--White);
+  color: black;
+}
+button[type="submit"]:focus {
   background-color: var(--Orange);
 }
 
