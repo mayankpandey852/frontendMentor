@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-<link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Interactive rating component</title>
-
   </head>
   <body>
-   
     <main>
-      <article class="rating-card">
+      <article class="rating-card" id="rating-card">
         <div class="icon">
-          <i class="fa-solid fa-star" style="color: #fb7413;"></i>
+          <i class="fa-solid fa-star" style="color: #fb7413"></i>
         </div>
         <h1>How did we do?</h1>
-        <p>   Please let us know how we did with your support request. All
-          feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-      
-          
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering! 1 2 3 4 5 Submit
         </p>
         <div class="score-grp">
           <button class="scoreBtn">1</button>
@@ -35,16 +38,23 @@
           <button class="scoreBtn">4</button>
           <button class="scoreBtn">5</button>
         </div>
-        <button class="btn" type="submit">SUbmit</button>
+        <button class="btn" type="submit" id="submit">SUbmit</button>
+        <p class="error" id="error">
+          </p>
+ 
       </article>
-    </main>
+      <article class="success-msg" id="success-msg">
+        <img src="./images/illustration-thank-you.svg" alt="" />
+        <div class="result" id="result">You selected <span id="val">4</span> out of 5 </div>
+        <h1>Thank You</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+       </main>
 
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-   </body>
+   
+    <script src="./main.js"></script>
+  </body>
 </html>
