@@ -31,10 +31,11 @@
                   What is Frontend Mentor, and how will it help me?
                 </div>
                 <div class="icon">
-                  <img src="./assets/images/icon-plus.svg" alt="" />
+                <img src="./assets/images/icon-plus.svg" alt="" />
+               
                 </div>
               </div>
-              <div class="content">
+              <div class="content active">
                 Frontend Mentor offers realistic coding challenges to help
                 developers improve their frontend coding skills with projects in
                 HTML, CSS, and JavaScript. It's suitable for all levels and
@@ -90,23 +91,8 @@
         </div>
       </div>
     </main>
-
+<script src="./main.js"></script>
   
-<script>
-let faqcont=document.querySelectorAll('.faq');
-console.log(faqcont);
-faqcont.forEach((item)=>{
-  item.addEventListener('click',(ev)=>{
-    if(item.children[1].classList.contains('active')){
-      item.children[1].classList.remove('active');
-    }
-    else{
-      
-      item.children[0].children[1].innerHTML.src="./assets/images/icon-minus.svg";
-      item.children[1].classList.add( 'active');
-    }
-  })
-})
-</script>
+
   </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src= 
+  "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"> 
+      </script> 
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<section class="gen-qr">
+
+  <div class="input">
+    <form id="qrGenForm">
+      <input type="text" placeholder="Enter your url to Genarate your QR" id="data">
+      <button class="submit" type="submit" id="submitBtn">Genarate</button>
+    </form>
+      
+  </div>
+</section>
+
+  <section class="scan-card">
+
+    <div>
+      <div class="image">
+        <div class="qrcode"></div> 
+        <!-- <img src="./images/image-qr-code.png" alt="">     -->
+         <div class="qr-img" id="qr-img">
+          
+         </div>
+      </div>
+      <div class="content">
+        <div class="heading">
+          <h1>
+            Instantly Genarate Your customised QR codes.
+    
+          </h1>
+        </div>
+        <p>
+          Enter the link to Genarate the QR codes for your choice.
+    
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+
+<script src="./main.js"></script>
+    
+</body>
+</html>

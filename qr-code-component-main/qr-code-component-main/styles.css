@@ -1,0 +1,99 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.scan-card {
+  max-width: 18vw;
+  text-align: center;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.scan-card div {
+  display: flex;
+  flex-direction: column;
+}
+.scan-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.scan-card h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.scan-card p {
+  font-size: 14px;
+
+  color: grey;
+}
+.gen-qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gen-qr input {
+  padding: 1rem;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.gen-qr button {
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input:focus {
+  outline: 1px solid rgb(44, 125, 250);
+}
+
+button:focus {
+  outline: 1px solid rgb(44, 125, 250);
+}
+.gen-qr h1 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.qr-img {
+  background-color: rgb(44, 125, 250);
+  padding: 0;
+  border-radius: 10px;
+}
+.content {
+  padding:2rem;
+}
